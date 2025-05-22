@@ -100,7 +100,7 @@ monitor_logs() {
 
         local args=()
         for log in "${LOG_FILES[@]}"; do
-            args+=("-n" "50" "$log")
+            args+=("-cS" "laravel" "-n" "50" "$log")
         done
 
         multitail "${args[@]}"
