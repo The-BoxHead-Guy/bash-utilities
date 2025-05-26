@@ -9,7 +9,7 @@
 readonly PROJECTS_BASE="$HOME/projects"
 readonly API_DIR="$PROJECTS_BASE/api.dataemergencia.com"
 readonly SCAEM_DIR="$PROJECTS_BASE/test.scaem.app"
-readonly START_DEV_SCRIPT="/home/jhon-p/scripts/dev_start.sh"
+readonly START_DEV_SCRIPT="$HOME/scripts/dev_start.sh"
 
 # Port assignments
 readonly API_PORT=8000
