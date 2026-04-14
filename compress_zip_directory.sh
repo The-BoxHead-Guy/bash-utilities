@@ -59,7 +59,7 @@ compress_directory() {
     # Create temporary directory and start processing
     local temp_dir=$(mktemp -d)
     show_progress_bar "Preparing files"
-    rsync -a --exclude='.git' --exclude='node_modules' "$source_dir/" "$temp_dir/" > /dev/null 2>&1
+    rsync -a --exclude='.git' --exclude='node_modules' --exclude='vendor' "$source_dir/" "$temp_dir/" > /dev/null 2>&1
 
     if [ $? -ne 0 ]; then
         rm -rf "$temp_dir"
